@@ -3,8 +3,8 @@ import altair as alt
 import pandas as pd 
 #import pip
 #pip.main(["install", "openpyxl"])
-falta = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Faltas/faltas_20222.xlsx')
-rank = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Faltas/Ranking de faltas.xlsx')
+falta = pd.read_excel('faltas_20222.xlsx')
+rank = pd.read_excel('Ranking de faltas.xlsx')
 faltas_20222 = falta.fillna(method="ffill")
 
 #Para definir as configurações da aba e da página:
