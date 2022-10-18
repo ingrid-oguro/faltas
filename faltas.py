@@ -1,8 +1,8 @@
 import streamlit as st
 import altair as alt
 import pandas as pd 
-#import pip
-#pip.main(["install", "openpyxl"])
+import pip
+pip.main(["install", "openpyxl"])
 falta = pd.read_excel('faltas_20222.xlsx')
 rank = pd.read_excel('Ranking de faltas.xlsx')
 faltas_20222 = falta.fillna(method="ffill")
