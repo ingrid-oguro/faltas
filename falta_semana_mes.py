@@ -2,13 +2,11 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import datetime
- 
-#df_falta = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Faltas/Acompanhamento de faltas (extr.24.10.2022).xlsx')
-#freq_aprov = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Faltas/notas e faltas (extr. 24.10.2022) freq.xlsx')
+import pip
+pip.main(["install", "openpyxl"])
 
-
-df_falta = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Faltas/Acompanhamento de faltas (extr. 28.10.2022).xlsx')
-freq_aprov = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Faltas/Notas e Faltas - 28.10.22.xlsx')
+df_falta = pd.read_excel('Acompanhamento de faltas (extr. 28.10.2022).xlsx')
+freq_aprov = pd.read_excel('Notas e Faltas - 28.10.22.xlsx')
 
 
 #Para definir as configurações da aba e da página:
