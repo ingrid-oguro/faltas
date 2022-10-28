@@ -59,7 +59,7 @@ base_aluno.sort_values(by=['MES'])
 st.markdown('#### CUMULATIVO DE FALTAS POR SEMANA',unsafe_allow_html=True)
 st.markdown('##### O gráfico a seguir mostra o total de faltas acumulado por semana em uma disciplina. Considerando que cada falta se refere ao horário de uma aula.',unsafe_allow_html=True)
 st.markdown('##### Ex: Uma disciplina pode ter 4 horários em 1 dia.',unsafe_allow_html=True)
-
+st.markdown('##### A linha vermelha marca o limite de aprovação',unsafe_allow_html=True)
 bar = alt.Chart(base_aluno).mark_bar(size=15).encode(
         y=alt.Y('TOTAL_FALTA', title = None, axis=alt.Axis(tickMinStep=1)),
         x=alt.X('SEMANA_DO_MES', title = None, axis=alt.Axis(tickMinStep=1)),
